@@ -10,14 +10,14 @@
         "model": "rarerestapi.tag",
         "pk": 2,
         "fields": {
-            "label": "talent"
+            "label": ""
         }
     },
     {
         "model": "rarerestapi.tag",
         "pk": 3,
         "fields": {
-            "label": "amazing"
+            "label": "funny"
         }
     }
 ]
