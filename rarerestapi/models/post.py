@@ -8,6 +8,6 @@ class Post(models.Model):
     category_id = models.ForeignKey(Category, on_delete=models.CASCADE)
     title = models.CharField(max_length=20)
     publication_date = models.DateField(auto_now=False, auto_now_add=False)
-    image_url = models.CharField()
+    image_url = models.CharField(max_length=1000)
     content = models.CharField(max_length=300)
     approved = models.BooleanField()
