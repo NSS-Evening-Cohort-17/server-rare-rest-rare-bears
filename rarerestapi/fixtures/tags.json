@@ -1,0 +1,23 @@
+[
+    {
+        "model": "rarerestapi.tag",
+        "pk": 1,
+        "fields": {
+            "label": "funny"
+        }
+    },
+    {
+        "model": "rarerestapi.tag",
+        "pk": 2,
+        "fields": {
+            "label": "talent"
+        }
+    },
+    {
+        "model": "rarerestapi.tag",
+        "pk": 3,
+        "fields": {
+            "label": "amazing"
+        }
+    }
+]
