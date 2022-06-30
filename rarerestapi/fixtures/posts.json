@@ -1,0 +1,41 @@
+[
+    {
+        "model": "rarerestapi.post",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "category_id": 1,
+            "title": "Puppies vs Kittens: Battle of the Most Adorable Pets",
+            "publication_date": "2022-12-12",
+            "image_url": "https://www.bayside-ah.com/blog/wp-content/uploads/2018/07/iStock-619961796-2000x1333.jpg",
+            "content": "They're both cute. Plenty of love to go around.",
+            "approved": true
+        }
+    },
+    {
+        "model": "rarerestapi.post",
+        "pk": 2,
+        "fields": {
+            "user": 1,
+            "category_id": 1,
+            "title": "NSS is the best!",
+            "publication_date": "2022-12-12",
+            "image_url": "https://www.bootcamprating.com/wp-content/uploads/2020/09/Nashville-Software-School_school_logo_image.png",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "approved": true
+        }
+    },
+    {
+        "model": "rarerestapi.post",
+        "pk": 3,
+        "fields": {
+            "user_id": 1,
+            "category_id": 1,
+            "title": "Network to Work then Werk",
+            "publication_date": "2022-12-12",
+            "image_url": "image_url",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "approved": false
+        }
+    }
+]
