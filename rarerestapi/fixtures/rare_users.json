@@ -1,6 +1,6 @@
 [
   {
-    "model": "rarerestapi.rare-users",
+    "model": "rarerestapi.rareuser",
     "pk": 1,
     "fields": {
       "bio": "Can I be excused for the rest of my life?",
@@ -11,7 +11,7 @@
     }
   },
   {
-    "model": "rarerestapi.rare-users",
+    "model": "rarerestapi.rareuser",
     "pk": 2,
     "fields": {
       "bio": "Wake Me Up When I Care.",
@@ -19,17 +19,6 @@
       "create_on": "2022-07-05",
       "active": true,
       "user_id": 2
-    }
-  },
-  {
-    "model": "rarerestapi.rare-users",
-    "pk": 3,
-    "fields": {
-      "bio": "Well, maybe it is stupid but it's also a little dumb.",
-      "profile_image_url": "https://i.pinimg.com/564x/09/24/27/09242708f0f9c1c96cf3819538ac5333.jpg",
-      "create_on": "2022-07-04",
-      "active": true,
-      "user_id": 3
     }
   }
 ]
