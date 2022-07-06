@@ -1,0 +1,18 @@
+[
+  {
+    "model": "rarerestapi.reaction",
+    "pk": 1,
+    "fields": {
+      "label": "Like",
+      "image_url": "https://w7.pngwing.com/pngs/157/534/png-transparent-youtube-facebook-like-button-emoticon-thumbs-up-like-icon-blue-text-hand.png"
+    }
+  },
+  {
+    "model": "rarerestapi.reaction",
+    "pk": 2,
+    "fields": {
+      "label": "Love",
+      "image_url": "https://www.iconpacks.net/icons/2/free-instagram-like-icon-3507-thumb.png"
+    }
+  }
+]
