@@ -1,0 +1,35 @@
+[
+  {
+    "model": "rarerestapi.rare-users",
+    "pk": 1,
+    "fields": {
+      "bio": "Can I be excused for the rest of my life?",
+      "profile_image_url": "https://i.pinimg.com/474x/ee/60/0b/ee600b5178e4f1648fd1e8623f049611.jpg",
+      "create_on": "2022-07-01",
+      "active": true,
+      "user_id": 1
+    }
+  },
+  {
+    "model": "rarerestapi.rare-users",
+    "pk": 2,
+    "fields": {
+      "bio": "Wake Me Up When I Care.",
+      "profile_image_url": "https://i.pinimg.com/564x/2c/56/eb/2c56ebc89b30b98254177b1bb65b64cb.jpg",
+      "create_on": "2022-07-05",
+      "active": true,
+      "user_id": 2
+    }
+  },
+  {
+    "model": "rarerestapi.rare-users",
+    "pk": 3,
+    "fields": {
+      "bio": "Well, maybe it is stupid but it's also a little dumb.",
+      "profile_image_url": "https://i.pinimg.com/564x/09/24/27/09242708f0f9c1c96cf3819538ac5333.jpg",
+      "create_on": "2022-07-04",
+      "active": true,
+      "user_id": 3
+    }
+  }
+]
