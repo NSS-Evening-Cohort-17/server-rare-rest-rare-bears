@@ -17,7 +17,7 @@
         "model": "rarerestapi.category",
         "pk": 3,
         "fields": {
-            "label": ""
+            "label": "Movies"
         }
     }
 ]   

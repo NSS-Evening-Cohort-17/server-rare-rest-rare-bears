@@ -3,7 +3,7 @@
         "model": "rarerestapi.demotion_queue",
         "pk": 1,
         "fields": {
-            "action": "" ,
+            "action": "Display likes" ,
             "admin_id": 2,
             "approver_one_id": 1
         }
@@ -21,7 +21,7 @@
         "model": "rarerestapi.demotion_queue",
         "pk": 3,
         "fields": {
-            "action": "" ,
+            "action": "Something Cool" ,
             "admin_id": 1,
             "approver_one_id": 2
         }
