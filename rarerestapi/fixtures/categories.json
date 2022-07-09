@@ -1,0 +1,23 @@
+[
+    {
+        "model": "rarerestapi.category",
+        "pk": 1,
+        "fields": {
+            "label": "Food"
+        }
+    },
+    {
+        "model": "rarerestapi.category",
+        "pk": 2,
+        "fields": {
+            "label": "Pets"
+        }
+    },
+    {
+        "model": "rarerestapi.category",
+        "pk": 3,
+        "fields": {
+            "label": "Movies"
+        }
+    }
+]   
