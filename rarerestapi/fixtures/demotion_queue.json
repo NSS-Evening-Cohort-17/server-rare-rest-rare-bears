@@ -1,0 +1,29 @@
+[
+    {
+        "model": "rarerestapi.demotion_queue",
+        "pk": 1,
+        "fields": {
+            "action": "Display likes" ,
+            "admin_id": 2,
+            "approver_one_id": 1
+        }
+    },
+    {
+        "model": "rarerestapi.demotion_queue",
+        "pk": 2,
+        "fields": {
+            "action": "Hide Comments" ,
+            "admin_id": 3,
+            "approver_one_id": 2
+        }
+    },
+    {
+        "model": "rarerestapi.demotion_queue",
+        "pk": 3,
+        "fields": {
+            "action": "Something Cool" ,
+            "admin_id": 1,
+            "approver_one_id": 2
+        }
+    }
+]
