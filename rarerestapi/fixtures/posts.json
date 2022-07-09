@@ -3,7 +3,7 @@
         "model": "rarerestapi.post",
         "pk": 1,
         "fields": {
-            "rare_user_id": 1,
+            "user_id": 1,
             "category_id": 1,
             "title": "Puppies vs Kittens: Battle of the Most Adorable Pets",
             "publication_date": "2022-12-12",
@@ -16,7 +16,7 @@
         "model": "rarerestapi.post",
         "pk": 2,
         "fields": {
-            "rare_user_id": 1,
+            "user_id": 1,
             "category_id": 1,
             "title": "NSS is the best!",
             "publication_date": "2022-12-12",
@@ -29,7 +29,7 @@
         "model": "rarerestapi.post",
         "pk": 3,
         "fields": {
-            "rare_user_id": 1,
+            "user_id": 1,
             "category_id": 1,
             "title": "Network to Work then Werk",
             "publication_date": "2022-12-12",
