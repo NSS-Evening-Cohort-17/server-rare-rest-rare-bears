@@ -6,7 +6,7 @@
             "follower": 1,
             "author": 2,
             "created_on": "2022-06-01",
-            "ended_on": ""
+            "ended_on": "2022-06-22"
         }
     },
     {
@@ -14,7 +14,7 @@
         "pk": 2,
         "fields": {
             "follower": 1,
-            "author": 3,
+            "author": 2,
             "created_on": "2021-04-12",
             "ended_on": "2022-06-14"
         }
@@ -26,7 +26,7 @@
             "follower": 2,
             "author": 1,
             "created_on": "2022-02-13",
-            "ended_on": ""
+            "ended_on": "2022-06-30"
         }
     }
 ]

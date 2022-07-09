@@ -1,24 +1,27 @@
 [
     {
-        "model": "rarerestapi.post_reactions",
+        "model": "rarerestapi.postreaction",
         "pk": 1,
         "fields": {
+            "user": 1,
             "reaction": 1,
             "post": 1
         }
     },
     {
-        "model": "rarerestapi.post_reactions",
+        "model": "rarerestapi.postreaction",
         "pk": 1,
         "fields": {
+            "user": 2,
             "reaction": 1,
             "post": 2
         }
     },
     {
-        "model": "rarerestapi.post_reactions",
+        "model": "rarerestapi.postreaction",
         "pk": 1,
         "fields": {
+            "user": 1,
             "reaction": 1,
             "post": 3
         }
