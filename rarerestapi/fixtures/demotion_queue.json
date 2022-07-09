@@ -4,8 +4,8 @@
         "pk": 1,
         "fields": {
             "action": "Display likes" ,
-            "admin_id": 2,
-            "approver_one_id": 1
+            "admin": 2,
+            "approver_one": 1
         }
     },
     {
@@ -13,8 +13,8 @@
         "pk": 2,
         "fields": {
             "action": "Hide Comments" ,
-            "admin_id": 3,
-            "approver_one_id": 2
+            "admin": 3,
+            "approver_one": 2
         }
     },
     {
@@ -22,8 +22,8 @@
         "pk": 3,
         "fields": {
             "action": "Something Cool" ,
-            "admin_id": 1,
-            "approver_one_id": 2
+            "admin": 1,
+            "approver_one": 2
         }
     }
 ]
