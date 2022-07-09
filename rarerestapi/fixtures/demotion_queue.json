@@ -1,29 +1,29 @@
 [
     {
-        "model": "rarerestapi.demotion_queue",
+        "model": "rarerestapi.demotionqueue",
         "pk": 1,
         "fields": {
             "action": "Display likes" ,
-            "admin_id": 2,
-            "approver_one_id": 1
+            "admin": 2,
+            "approver_one": 1
         }
     },
     {
-        "model": "rarerestapi.demotion_queue",
+        "model": "rarerestapi.demotionqueue",
         "pk": 2,
         "fields": {
             "action": "Hide Comments" ,
-            "admin_id": 3,
-            "approver_one_id": 2
+            "admin": 2,
+            "approver_one": 2
         }
     },
     {
-        "model": "rarerestapi.demotion_queue",
+        "model": "rarerestapi.demotionqueue",
         "pk": 3,
         "fields": {
             "action": "Something Cool" ,
-            "admin_id": 1,
-            "approver_one_id": 2
+            "admin": 1,
+            "approver_one": 2
         }
     }
 ]
