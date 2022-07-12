@@ -33,6 +33,7 @@ class PostView(ViewSet):
         """
         
         posts = Post.objects.all()
+        posts = posts.order_by('-publication_date')
         category = request.query_params.get('category', None)
         if category is not None:
             posts = posts.filter(category_id=category)
