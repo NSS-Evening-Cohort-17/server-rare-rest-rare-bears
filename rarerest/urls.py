@@ -2,8 +2,9 @@ from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
-from rarerestapi.views import register_user, login_user
+from rarerestapi.views import register_user, login_user, CommentView
 router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'comments', CommentView, 'comment')
 
 urlpatterns = [
     path('register', register_user),
