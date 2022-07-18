@@ -29,8 +29,21 @@ class TagView(ViewSet):
         serializer = TagSerializer(tags, many=True)
         return Response(serializer.data)
 
+    def create(self, request):
+        """Handle POST operations
+
+        Returns
+            Response -- JSON serialized tag instance
+        """
+
+        tag = Tag.objects.create(
+            label=request.data["label"],
+        )
+        serializer = TagSerializer(tag)
+        return Response(serializer.data)
+
 class TagSerializer(serializers.ModelSerializer):
-    """JSON serializer for game types
+    """JSON serializer tags
     """
     class Meta:
         model = Tag
