@@ -28,6 +28,17 @@ class TagView(ViewSet):
         tags = Tag.objects.all()
         serializer = TagSerializer(tags, many=True)
         return Response(serializer.data)
+    
+    def create(self, request):
+        """Handle POST operations
+        
+        Response -- JSON serialized game instance
+        """
+        tag = Tag.objects.create(
+            label=request.data["label"]
+        )
+        serializer = TagSerializer(tag)
+        return Response(serializer.data)
 
     def create(self, request):
         """Handle POST operations
