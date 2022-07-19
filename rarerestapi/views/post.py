@@ -33,6 +33,7 @@ class PostView(ViewSet):
         """
         
         posts = Post.objects.all()
+        posts = posts.order_by('-publication_date')
         category = request.query_params.get('category', None)
         if category is not None:
             posts = posts.filter(category_id=category)
@@ -75,7 +76,7 @@ class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
         fields = ['id', 'user', 'category', 'title', 'publication_date', 'image_url', 'content', 'approved']
-        depth = 1
+        depth = 2
         
 class CreatePostSerializer(serializers.ModelSerializer):
     class Meta:
