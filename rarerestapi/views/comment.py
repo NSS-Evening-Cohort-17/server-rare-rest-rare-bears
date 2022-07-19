@@ -31,6 +31,9 @@ class CommentView(ViewSet):
             Response -- JSON serialized list of comments
         """
         comments = Comment.objects.all()
+        post = request.query_params.get('post', None)
+        if post is not None:
+            comments = comments.filter(post=post)
         serializer = CommentSerializer(comments, many=True, context={'request':request} )
         return Response(serializer.data) 
     def create(self, request):
@@ -69,7 +72,8 @@ class CommentSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Comment
-        fields = ['id', 'post', 'author', 'created_on', 'content']      
+        fields = ['id', 'post', 'author', 'created_on', 'content']
+        depth = 2     
 
 class CreateCommentSerializer(serializers.ModelSerializer):
     class Meta:
