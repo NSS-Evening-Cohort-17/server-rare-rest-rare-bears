@@ -40,18 +40,18 @@ class TagView(ViewSet):
         serializer = TagSerializer(tag)
         return Response(serializer.data)
 
-    def create(self, request):
-        """Handle POST operations
-
-        Returns
-            Response -- JSON serialized tag instance
+    def update(self,request, pk):
+        """Handle PUT requests for a game
+        Returns:
+            Response -- Empty body with 204 status code
         """
 
-        tag = Tag.objects.create(
-            label=request.data["label"],
-        )
-        serializer = TagSerializer(tag)
-        return Response(serializer.data)
+        tag = Tag.objects.get(pk=pk)
+        tag.label = request.data["label"]
+
+        tag.save()
+
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 class TagSerializer(serializers.ModelSerializer):
     """JSON serializer tags
