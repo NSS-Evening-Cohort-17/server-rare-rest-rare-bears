@@ -1,4 +1,6 @@
 """View module for handling requests about categories"""
+from nis import cat
+from unicodedata import category
 from django.http import HttpResponseServerError
 from django.core.exceptions import ValidationError
 from rest_framework.viewsets import ViewSet
@@ -49,11 +51,15 @@ class CategoryView(ViewSet):
         Returns:
             Response -- Empty body with a 204 status code
         """
-
         category = Category.objects.get(pk=pk)
         serializer = CreateCategorySerializer(category, data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+
+    def destroy(self, request, pk):
+        category = Category.objects.get(pk=pk)
+        category.delete()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 class CategorySerializer(serializers.ModelSerializer):
