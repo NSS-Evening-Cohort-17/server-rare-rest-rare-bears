@@ -32,7 +32,7 @@ class TagView(ViewSet):
     def create(self, request):
         """Handle POST operations
         
-        Response -- JSON serialized game instance
+        Response -- JSON serialized tag instance
         """
         tag = Tag.objects.create(
             label=request.data["label"]
@@ -41,7 +41,7 @@ class TagView(ViewSet):
         return Response(serializer.data)
 
     def update(self,request, pk):
-        """Handle PUT requests for a game
+        """Handle PUT requests for a tag
         Returns:
             Response -- Empty body with 204 status code
         """
@@ -52,6 +52,12 @@ class TagView(ViewSet):
         tag.save()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
+
+    def destroy(self, request, pk):
+        tag = Tag.objects.get(pk=pk)
+        tag.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+        
 
 class TagSerializer(serializers.ModelSerializer):
     """JSON serializer tags
